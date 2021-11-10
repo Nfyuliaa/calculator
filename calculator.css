@@ -1,0 +1,81 @@
+h1 {
+    color:dimgrey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    outline: none;
+    padding: 0px;
+    background-color: #ecf0ec;
+}
+.container {
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    padding: 16px;
+    border-radius: 30px;
+    background-color:darkgrey;
+    display: grid;
+    grid-template-columns: repeat(4,68px);
+    box-shadow: inset 5px 5px 12px darkgrey, 5px 5px 12px rgba(0, 0, 0, .16);
+}
+
+input {
+    height: 70px;
+    width: 270px;
+    grid-column: span 4;
+    background-color: #ecf0ec;
+    box-shadow: inset 5px 5px 12px darkgrey, -5px -5px 12px rgba(0, 0, 0, .16);
+    border: none;
+    border-radius: 30px;
+    color: rgb(70, 70, 70);
+    font-size: 50px;
+    text-align: end;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+button {
+    background-color: #ecf0ec;
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: -5px -5px 12px darkgrey, 5px 5px 12px rgba(0, 0, 0, .16);
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #black;
+}
+button:hover{
+    background-color: #c8dad3;
+}
+.hasil {
+    width: : 115px;
+    border-radius: 45px;
+    box-shadow: -5px -5px 12px darkgrey, 5px 5px 12px rgba(0, 0, 0, .16);
+    background-color: #ecf0ec;
+}
+
+/* responsive di layar mobile middle */
+@media(min-width:321px) and (max-width: 425px) {
+    section#box-profile{
+        width: 90%;
+        height: 630px;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 30px;
+    }
+    menu.mobile{
+        top: 20px;
+        right: 10%;
+        display: inline-block;
+    }
+}
